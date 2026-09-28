@@ -192,8 +192,22 @@ div.stButton > button[kind="primary"]:hover {
 .page-header { padding: 20px 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
 .page-title  { font-size: 25px; font-weight: 700; color: var(--ink); margin: 0 0 3px; }
 .page-sub    { font-size: 14px; color: var(--muted); margin: 0; }
-[data-testid="stChatMessage"] { border-bottom: 1px solid var(--line); padding: 14px 2px; }
-[data-testid="stChatMessage"] p { line-height: 1.65; font-size: 14.5px; }
+[data-testid="stChatMessage"] {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 2px;
+}
+
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"],
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] span,
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] div,
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] li,
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] strong,
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] em {
+    color: #1a2421 !important;
+    line-height: 1.65;
+    font-size: 14.5px;
+}
 .cat-pill {
     display: inline-block; padding: 2px 9px; border-radius: 20px;
     background: var(--tag-bg); color: var(--tag-ink);
